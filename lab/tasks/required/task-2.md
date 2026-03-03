@@ -85,7 +85,7 @@ Title: `[Task] Back-end Testing`
    [run in the `VS Code Terminal`](../../../wiki/vs-code.md#run-a-command-in-the-vs-code-terminal):
 
    ```terminal
-   uv run poe test
+   uv run poe test-unit
    ```
 
 2. All existing tests should pass.
@@ -132,7 +132,7 @@ Title: `[Task] Back-end Testing`
    [run in the `VS Code Terminal`](../../../wiki/vs-code.md#run-a-command-in-the-vs-code-terminal):
 
    ```terminal
-   uv run poe test
+   uv run poe test-unit
    ```
 
 6. Observe that the new test fails.
@@ -186,7 +186,7 @@ Title: `[Task] Back-end Testing`
    [run in the `VS Code Terminal`](../../../wiki/vs-code.md#run-a-command-in-the-vs-code-terminal):
 
    ```terminal
-   uv run poe test
+   uv run poe test-unit
    ```
 
 2. All tests should pass.
