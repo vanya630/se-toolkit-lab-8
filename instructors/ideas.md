@@ -28,7 +28,9 @@
   - [Lab Observability - TODO - Backlog](#lab-observability---todo---backlog)
   - [Lab Telegram Bot - TODO - Task 2](#lab-telegram-bot---todo---task-2)
 - [Future Lab](#future-lab)
+  - [Future Lab - TODO - Backlog](#future-lab---todo---backlog)
   - [Future Lab - VM setup](#future-lab---vm-setup)
+  - [Hackathon](#hackathon)
 
 ## Course - TODO
 
@@ -40,13 +42,12 @@
 
 ### Lab 5 - TODO - Repo
 
-- move instructors/context/conventions and docs/contributing/conventions to contributing/conventions
+- agents.md
+- remember to use .agents
 
 ### Lab 5 - TODO - Conventions
 
-- indented note is a block quote
 - should a section in a sequence of steps assume the previous step?
-- the autochecker -> `Autochecker`
 - "frontend" and "backend" as nouns
 - Rename app -> backend
 - Rename `APP_` -> `BACK_`
@@ -67,6 +68,13 @@
 - [?] troubleshooting - block quote
 - setup-simple.md - a simpler version of setup.md
   must be in sync
+- links should be relative markdown, not just `path/file`
+  
+  skills: links to conventions
+- number sections
+  Keep Decision 1
+- Remove coverage section
+- Specify severity for violations
 
 ### Lab 5 - TODO - Config
 
@@ -83,16 +91,17 @@
 - don't use claude-specific words in skills
 - skill /issue
 - skill: review lab
-  - run /review-file-by-conventions in parallel on tasks
+  - run /review-file in parallel on tasks
   - only sonnet
 - skill: review wiki
-  - run /review-file-by-conventions in parallel on wiki files
+  - run /review-file in parallel on wiki files
 - skill /explain-step
   - select step, then run skill on the selection
   - for students - gives complete instructions on how to do the step
 - skill /explain-step-in-russian
   gives the same instructions as explain-step but in Russian
-
+- skill /rewrite-lab <programming-language>
+  
 ### Lab 5 - TODO - Instructors
 
 - goal: interact with the database, not just observe
@@ -113,6 +122,7 @@
 - Add instructions for qwen by ssh
   Need browser flow for free requests
   Therefore, will have to run on the laptop and connect by ssh
+- coding-agents.md - select lines and ask questions
 
 ### Lab 5 - TODO - Docs
 
@@ -194,8 +204,14 @@
 
 ### Lab 5 - DONE - Conventions
 
-- [x] conventions: prohibit agent-specific language in skills
-      see docs/contributing/conventions/skills.md
+- conventions: prohibit agent-specific language in skills
+  see contributing/conventions/agents/skills.md
+- indented note is a block quote
+- meeting report
+  
+  date and deadline in separate sections
+- review which conventions aren't mentioned anywhere or mentioned without a markdown link
+- the autochecker -> `Autochecker`
 
 ### Lab 5 - DONE - Skills
 
@@ -229,7 +245,17 @@
 
 ## Future Lab
 
+### Future Lab - TODO - Backlog
+
+- Multiple backends (Go, Haskell, TypeScript, Java)
+
 ### Future Lab - VM setup
 
 - use [system-manager](https://github.com/numtide/system-manager)
 - Migrate relevant parts of inno-se/the-guide (environments)
+
+### Hackathon
+
+- Teach to make meeting notes after a discussion using AI
+- provide a prompt for discussing with an AI
+- set up voice mode in the agent

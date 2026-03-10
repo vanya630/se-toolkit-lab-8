@@ -301,13 +301,12 @@ The code stubs in `backend/app/etl.py` contain detailed TODOs.
 
    The exact numbers depend on how many check results exist in the Autochecker.
 
-
    <details><summary><b>Troubleshooting (click to open)</b></summary>
 
    <h4>500 Internal Server Error</h4>
   
    If you get a `500` error, the pipeline code has a bug. Use this debug loop:
-   
+
    1. To check the container logs for the error,
 
       [run in the `VS Code Terminal`](../../../wiki/vs-code.md#run-a-command-in-the-vs-code-terminal):
@@ -315,6 +314,7 @@ The code stubs in `backend/app/etl.py` contain detailed TODOs.
       ```terminal
       docker compose --env-file .env.docker.secret logs app --tail 50
       ```
+
    2. Copy the error traceback and give it to your coding agent.
    3. Apply the fix, rebuild (`docker compose --env-file .env.docker.secret up --build -d`), and try again.
    4. Repeat this cycle 2–3 times. AI agents often make mistakes with field names, imports, or database constraints on the first try. Each iteration gets you closer.
@@ -368,7 +368,7 @@ The code stubs in `backend/app/etl.py` contain detailed TODOs.
 
 #### 1.4.6. Commit and push your work
 
-1. [Commit](../../../wiki/git-workflow.md#commit) your changes.
+1. [Commit](../../../wiki/git-workflow.md#commit-changes) your changes.
 
    Use this commit message:
 
@@ -417,7 +417,7 @@ The code stubs in `backend/app/etl.py` contain detailed TODOs.
 
 ### 1.5. Finish the task
 
-1. [Create a PR](../../../wiki/git-workflow.md#create-a-pr) with your changes.
+1. [Create a PR](../../../wiki/git-workflow.md#create-a-pr-to-the-main-branch-in-your-fork) with your changes.
 2. [Get a PR review](../../../wiki/git-workflow.md#get-a-pr-review) and complete the subsequent steps in the `Git workflow`.
 
 ### 1.6. Check the task using the autochecker
