@@ -16,7 +16,7 @@
 - [Service](#service)
 - [User](#user)
   - [Username](#username)
-  - [`<username>` placeholder](#username-placeholder)
+  - [`<user>` placeholder](#user-placeholder)
 - [Group](#group)
 - [Permission](#permission)
 
@@ -129,7 +129,7 @@ Each user has a [username](#username) and a set of [permissions](#permission) th
 
 A username is the unique name that identifies a [user](#user) account on the operating system. It is used when logging in to the system.
 
-### `<username>` placeholder
+### `<user>` placeholder
 
 The [username](#username) (without `<` and `>`).
 

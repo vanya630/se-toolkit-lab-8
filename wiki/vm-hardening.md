@@ -48,17 +48,17 @@ Docs:
    [run in the `VS Code Terminal`](./vs-code.md#run-a-command-in-the-vs-code-terminal):
 
    ```terminal
-   adduser <username>
+   adduser <user>
    ```
 
-   Replace [`<username>`](./operating-system.md#username-placeholder) with the username.
+   Replace [`<user>`](./operating-system.md#user-placeholder) with the username.
 
 4. To add the user to the `sudo` group,
 
    [run in the `VS Code Terminal`](./vs-code.md#run-a-command-in-the-vs-code-terminal):
 
    ```terminal
-   usermod -aG sudo <username>
+   usermod -aG sudo <user>
    ```
 
 ### Set up SSH key authentication for the new user
@@ -68,7 +68,7 @@ Docs:
    [run in the `VS Code Terminal`](./vs-code.md#run-a-command-in-the-vs-code-terminal):
 
    ```terminal
-   mkdir -p /home/<username>/.ssh
+   mkdir -p /home/<user>/.ssh
    ```
 
 2. To copy the authorized keys from the `root` user,
@@ -76,7 +76,7 @@ Docs:
    [run in the `VS Code Terminal`](./vs-code.md#run-a-command-in-the-vs-code-terminal):
 
    ```terminal
-   cp /root/.ssh/authorized_keys /home/<username>/.ssh/
+   cp /root/.ssh/authorized_keys /home/<user>/.ssh/
    ```
 
 3. To set the correct ownership on the `.ssh` directory,
@@ -84,7 +84,7 @@ Docs:
    [run in the `VS Code Terminal`](./vs-code.md#run-a-command-in-the-vs-code-terminal):
 
    ```terminal
-   chown -R <username>:<username> /home/<username>/.ssh
+   chown -R <user>:<user> /home/<user>/.ssh
    ```
 
 4. To set the correct permissions on the `.ssh` directory,
@@ -92,7 +92,7 @@ Docs:
    [run in the `VS Code Terminal`](./vs-code.md#run-a-command-in-the-vs-code-terminal):
 
    ```terminal
-   chmod 700 /home/<username>/.ssh
+   chmod 700 /home/<user>/.ssh
    ```
 
 5. To set the correct permissions on the `authorized_keys` file,
@@ -100,7 +100,7 @@ Docs:
    [run in the `VS Code Terminal`](./vs-code.md#run-a-command-in-the-vs-code-terminal):
 
    ```terminal
-   chmod 600 /home/<username>/.ssh/authorized_keys
+   chmod 600 /home/<user>/.ssh/authorized_keys
    ```
 
 6. To verify you can [`SSH`](./ssh.md#what-is-ssh) as the new user,
@@ -108,7 +108,7 @@ Docs:
    [run in the `VS Code Terminal`](./vs-code.md#run-a-command-in-the-vs-code-terminal):
 
    ```terminal
-   ssh <username>@<your-vm-ip-address>
+   ssh <user>@<your-vm-ip-address>
    ```
 
    Replace [`<your-vm-ip-address>`](./vm.md#your-vm-ip-address).
@@ -259,7 +259,7 @@ After changing the [`SSH`](./ssh.md#what-is-ssh) config, restart the `SSH` servi
    [run in the `VS Code Terminal`](./vs-code.md#run-a-command-in-the-vs-code-terminal):
 
    ```terminal
-   ssh <username>@<your-vm-ip-address>
+   ssh <user>@<your-vm-ip-address>
    ```
 
    Replace [`<your-vm-ip-address>`](./vm.md#your-vm-ip-address).

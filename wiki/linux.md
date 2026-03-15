@@ -97,8 +97,13 @@ To change the owner and group,
 [run in the `VS Code Terminal`](./vs-code.md#run-a-command-in-the-vs-code-terminal):
 
 ```terminal
-chown <user>:<group> <path>
+chown <user>:<group> <fd-path>
 ```
+
+Replace the placeholders:
+
+- [`<user>`](./operating-system.md#user-placeholder)
+
 
 To change the owner and group recursively for a directory and its contents, add the `-R` flag:
 
@@ -139,7 +144,7 @@ For `Ubuntu`/`Debian` systems:
    [run in the `VS Code Terminal`](./vs-code.md#run-a-command-in-the-vs-code-terminal):
 
    ```terminal
-   sudo adduser <username>
+   sudo adduser <user>
    ```
 
 2. To allow the user to run administrative commands,
@@ -147,7 +152,7 @@ For `Ubuntu`/`Debian` systems:
    [run in the `VS Code Terminal`](./vs-code.md#run-a-command-in-the-vs-code-terminal):
 
    ```terminal
-   sudo usermod -aG sudo <username>
+   sudo usermod -aG sudo <user>
    ```
 
 3. To switch to that user,
@@ -155,7 +160,7 @@ For `Ubuntu`/`Debian` systems:
    [run in the `VS Code Terminal`](./vs-code.md#run-a-command-in-the-vs-code-terminal):
 
    ```terminal
-   su - <username>
+   su - <user>
    ```
 
 4. To verify the current user,

@@ -107,7 +107,7 @@ Its [absolute path](#absolute-path) is `/`.
 
 Shortcut for the [absolute path](#absolute-path) for the [user](./operating-system.md#user) home [directory](#directory) `/home/<user>/`.
 
-See [`<user>`](./operating-system.md#username-placeholder).
+See [`<user>`](./operating-system.md#user-placeholder).
 
 ### Current directory (`.`)
 
