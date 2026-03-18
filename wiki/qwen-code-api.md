@@ -186,7 +186,7 @@ Complete these steps:
          },
          "total_tokens": 23
       },
-      "model": "qwen3-coder-plus",
+      "model": "coder-model",
       "id": "chatcmpl-9c04fd89-7d16-469f-af7b-8e64a9418bb3",
       "choices": [
          {
