@@ -131,13 +131,10 @@ Docs:
 
 `main` is the default branch of a repository.
 It represents the stable, up-to-date state of the project.
-All feature branches are created from `main` and merged back into it via a pull request.
 
 ### `<branch>` placeholder
 
-A branch name (without `<` and `>`).
-
-Alternatively, a `Git` branch.
+A [`Git` branch](#branch) name (without `<` and `>`).
 
 Examples:
 
