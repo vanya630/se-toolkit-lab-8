@@ -23,7 +23,7 @@ se-toolkit-lab-7/
 │   ├── pyproject.toml    ← bot dependencies
 │   └── PLAN.md             ← development plan
 ├── backend/                ← existing
-├── frontend/               ← existing
+├── client-web-react/       ← existing
 └── docker-compose.yml      ← existing
 ```
 

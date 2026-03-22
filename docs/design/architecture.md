@@ -315,7 +315,7 @@ sequenceDiagram
 
 **Decision:** Caddy serves the built React SPA as static files at `/` and reverse-proxies API paths (`/items`, `/learners`, `/interactions`, `/docs`) to FastAPI.
 
-**Rationale:** A single-origin setup eliminates CORS configuration and simplifies the frontend — the SPA uses relative paths instead of an absolute API URL. Caddy also handles TLS termination and port decoupling. The frontend is compiled in a multi-stage Dockerfile (`frontend/Dockerfile`): Node builds the TypeScript bundle, then the output is copied into the Caddy image.
+**Rationale:** A single-origin setup eliminates CORS configuration and simplifies the frontend — the SPA uses relative paths instead of an absolute API URL. Caddy also handles TLS termination and port decoupling. The frontend is compiled in a multi-stage Dockerfile (`client-web-react/Dockerfile`): Node builds the TypeScript bundle, then the output is copied into the Caddy image.
 
 **Configuration:** `CADDY_CONTAINER_PORT` (external) → `BACKEND_CONTAINER_PORT` (FastAPI). Defaults: `42002` → `8000`.
 

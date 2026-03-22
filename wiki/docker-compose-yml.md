@@ -73,11 +73,11 @@ Configuration in [`docker-compose.yml`](../docker-compose.yml):
 
 The `caddy` service runs [`Caddy`](./caddy.md#what-is-caddy), a [reverse proxy](./web-infrastructure.md#reverse-proxy) that serves frontend files and forwards [API](./api.md#what-is-an-api) requests to the [`backend` service](#backend-service).
 
-It builds from [`frontend/Dockerfile`](../frontend/Dockerfile), which uses a multi-stage build: the first stage builds the frontend with `Node.js`, and the second stage serves the output with `Caddy`.
+It builds from [`client-web-react/Dockerfile`](../client-web-react/Dockerfile), which uses a multi-stage build: the first stage builds the frontend with `Node.js`, and the second stage serves the output with `Caddy`.
 
 Configuration in [`docker-compose.yml`](../docker-compose.yml):
 
-- **`build: frontend/`** — builds the [image](./docker.md#image) from the [`Dockerfile`](../frontend/Dockerfile) in the `frontend/` directory.
+- **`build: client-web-react/`** — builds the [image](./docker.md#image) from the [`Dockerfile`](../client-web-react/Dockerfile) in the `client-web-react/` directory.
 - **`depends_on`** — waits for the `backend` service to start before starting.
 - **`environment`** — passes [`CADDY_CONTAINER_PORT`](./dotenv-docker-secret.md#caddy_container_port) and [`BACKEND_CONTAINER_PORT`](./dotenv-docker-secret.md#backend_container_port) from [`.env.docker.secret`](./dotenv-docker-secret.md#what-is-envdockersecret).
 - **`ports`** — maps [`LMS_API_HOST_ADDRESS`](./dotenv-docker-secret.md#lms_api_host_address):[`LMS_API_HOST_PORT`](./dotenv-docker-secret.md#lms_api_host_port) on the [host](./computer-networks.md#host) to `CADDY_CONTAINER_PORT` inside the [container](./docker.md#container).

@@ -437,7 +437,7 @@ Bad: `----`, `-----`, `***`, `___`
 
 ## 4.24. Inline paths
 
-Use a trailing `/` for directory paths: `` `lab/tasks/` ``, `` `frontend/` ``.
+Use a trailing `/` for directory paths: `` `lab/tasks/` ``, `` `client-web-react/` ``.
 
 Exception: `..` references do not get a trailing `/`: `` `lab/tasks/..` ``.
 

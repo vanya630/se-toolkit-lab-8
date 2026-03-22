@@ -22,7 +22,7 @@
 
 The LMS API (Learning Management System API) is a [web API](./web-api.md#what-is-a-web-api) built with [`FastAPI`](https://fastapi.tiangolo.com/) that provides [endpoints](./web-api.md#endpoint) for managing learning data.
 
-The [LMS frontend](./lms-frontend.md#about-the-lms-frontend) uses the LMS API to display items and dashboard charts.
+The [LMS frontend](./lms-client-web-react.md#about-the-lms-frontend) uses the LMS API to display items and dashboard charts.
 [`Caddy`](#caddy) serves as a [reverse proxy](./web-infrastructure.md#reverse-proxy) that [forwards requests to the backend](#forward-requests-to-the-backend).
 
 Docs:
@@ -34,7 +34,7 @@ Docs:
 The [API key](./web-api.md#api-key) that is used to authorize requests to the [LMS API](#about-the-lms-api) in:
 
 - The [`Swagger UI`](./swagger.md#authorize-in-swagger-ui)
-- The [LMS frontend](./lms-frontend.md#authentication)
+- The [LMS frontend](./lms-client-web-react.md#authentication)
 
 The key should follow the [API key format](./web-api.md#api-key-format).
 

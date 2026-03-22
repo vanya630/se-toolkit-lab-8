@@ -16,7 +16,7 @@ The LMS frontend is a single-page [frontend](./frontend.md#what-is-frontend) app
 
 After you [authenticate](#authentication), you can see [items](#items-page) and [analytics dashboards](#dashboard-page) loaded from the LMS API.
 
-The source code is in the [`frontend/`](../frontend/) directory.
+The source code is in the [`client-web-react/`](../client-web-react/) directory.
 
 Docs:
 
@@ -65,17 +65,17 @@ Click **Disconnect** in the navigation bar to clear the stored key and return to
 
 [`Vite`](https://vite.dev/) runs a development server that serves the frontend locally and [proxies](./web-infrastructure.md#reverse-proxy) API requests to the backend.
 
-The proxy target is configured by [`VITE_API_TARGET`](./frontend-dotenv-secret.md#vite_api_target) in [`frontend/.env.secret`](./frontend-dotenv-secret.md#what-is-frontendenvsecret).
+The proxy target is configured by [`VITE_API_TARGET`](./client-web-react-dotenv-secret.md#vite_api_target) in [`client-web-react/.env.secret`](./client-web-react-dotenv-secret.md#what-is-client-web-reactenvsecret).
 
-1. To navigate to the `frontend/` directory,
+1. To navigate to the `client-web-react/` directory,
 
    [run in the `VS Code Terminal`](./vs-code.md#run-a-command-in-the-vs-code-terminal):
 
    ```terminal
-   cd frontend
+   cd client-web-react
    ```
 
-2. To create the [environment file](./frontend-dotenv-secret.md#what-is-frontendenvsecret),
+2. To create the [environment file](./client-web-react-dotenv-secret.md#what-is-client-web-reactenvsecret),
 
    [run in the `VS Code Terminal`](./vs-code.md#run-a-command-in-the-vs-code-terminal):
 
@@ -83,7 +83,7 @@ The proxy target is configured by [`VITE_API_TARGET`](./frontend-dotenv-secret.m
    cp .env.example .env.secret
    ```
 
-   Then set [`VITE_API_TARGET`](./frontend-dotenv-secret.md#vite_api_target) to your [LMS API base URL](./lms-api.md#lms-api-base-url).
+   Then set [`VITE_API_TARGET`](./client-web-react-dotenv-secret.md#vite_api_target) to your [LMS API base URL](./lms-api.md#lms-api-base-url).
 
 3. To install [`Node.js`](./nodejs.md#what-is-nodejs) dependencies,
 
@@ -105,4 +105,4 @@ The proxy target is configured by [`VITE_API_TARGET`](./frontend-dotenv-secret.m
 
 In production, the frontend is built into static files by [`Vite`](https://vite.dev/) and served by [`Caddy`](./caddy.md#what-is-caddy).
 
-The [`caddy` service](./docker-compose-yml.md#caddy-service) builds the frontend using [`frontend/Dockerfile`](../frontend/Dockerfile) and [serves the output files](./lms-api.md#serve-frontend-files) from `/srv`.
+The [`caddy` service](./docker-compose-yml.md#caddy-service) builds the frontend using [`client-web-react/Dockerfile`](../client-web-react/Dockerfile) and [serves the output files](./lms-api.md#serve-frontend-files) from `/srv`.

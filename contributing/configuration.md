@@ -110,7 +110,7 @@ Create the following directory and file layout. Items marked *(conditional)* are
 │   ├── settings.json                  # Editor, formatter, ToC settings
 │   └── extensions.json                # Recommended VS Code extensions
 ├── backend/                           # Application source code (conditional)
-├── frontend/                          # Application source code (conditional)
+├── client-web-react/                  # Application source code (conditional)
 ├── caddy/                             # Reverse proxy config (conditional — only if using Docker)
 │   └── Caddyfile
 ├── .gitignore

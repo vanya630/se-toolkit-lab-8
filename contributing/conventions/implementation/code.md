@@ -7,7 +7,7 @@ quality attribute so the reasoning behind every rule is explicit.
 
 - [Naming](#naming)
   - [Python (`backend/`)](#python-backend)
-  - [TypeScript / React (`frontend/`)](#typescript--react-frontend)
+  - [TypeScript / React (`client-web-react/`)](#typescript--react-client-web-react)
   - [Environment variables](#environment-variables)
   - [Markdown / config files](#markdown--config-files)
 - [Comments and docstrings](#comments-and-docstrings)
@@ -52,7 +52,7 @@ quality attribute so the reasoning behind every rule is explicit.
 - **Test file** — `test_<module>.py` — e.g., `test_interactions.py`
 - **Test function** — `test_<behaviour>` — e.g., `test_filters_by_item_id`
 
-### TypeScript / React (`frontend/`)
+### TypeScript / React (`client-web-react/`)
 
 - **File — component** — `PascalCase.tsx` — e.g., `App.tsx`
 - **File — utility** — `camelCase.ts` — e.g., `apiClient.ts`

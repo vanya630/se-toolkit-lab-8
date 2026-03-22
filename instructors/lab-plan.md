@@ -174,7 +174,7 @@ Mirrors Lab 6 setup checks + deployment + sync.
 - CLI test mode wired up (even if handlers return placeholder text)
 
 > Students add their bot code inside the existing repo (forked from lab-7
-> template). The repo already has `backend/`, `frontend/`, `docker-compose.yml`,
+> template). The repo already has `backend/`, `client-web-react/`, `docker-compose.yml`,
 > `README.md`, etc. The bot lives in a `bot/` subdirectory.
 
 **Auto-checks:**
@@ -478,7 +478,7 @@ if __name__ == "__main__":
 ## Architecture Guidance (given to students)
 
 ```
-se-toolkit-lab-7/           ← forked repo (already has backend/, frontend/, etc.)
+se-toolkit-lab-7/           ← forked repo (already has backend/, client-web-react/, etc.)
 ├── bot/                    ← NEW — all bot code goes here
 │   ├── bot.py              ← entry point (Telegram startup OR --test mode)
 │   ├── handlers/
@@ -495,7 +495,7 @@ se-toolkit-lab-7/           ← forked repo (already has backend/, frontend/, et
 │   ├── Dockerfile          ← bot container
 │   └── PLAN.md             ← development plan from Qwen Code
 ├── backend/                ← existing (from lab-6 fork)
-├── frontend/               ← existing
+├── client-web-react/       ← existing
 ├── docker-compose.yml      ← existing — students ADD a bot service
 ├── .env.bot.example      ← existing — students ADD BOT_TOKEN
 └── .env.docker.secret      ← existing — backend credentials

@@ -221,7 +221,7 @@ The `.gitignore` file allows you to specify which files shouldn't be added to th
 Examples:
 
 - [`.gitignore`](../.gitignore)
-- [`frontend/.gitignore`](../frontend/.gitignore)
+- [`client-web-react/.gitignore`](../client-web-react/.gitignore)
 
 Common ignored files:
 

@@ -24,7 +24,7 @@ Read before making changes:
 - [`contributing/conventions/writing/lab.md`](../writing/lab.md) — README structure, git workflow, narrative, security pattern, database naming, checklist
 - [`contributing/conventions/writing/setup.md`](../writing/setup.md) — setup file structure and conventions (`setup.md`, `setup-simple.md`)
 
-## When editing code (`backend/`, `frontend/`)
+## When editing code (`backend/`, `client-web-react/`)
 
 Read and follow:
 

@@ -135,7 +135,7 @@ You need to run the ETL pipeline to populate it with data from the [`Autochecker
 
    Replace the placeholder [`<lms-api-base-url>`](./lms-api.md#lms-api-base-url-placeholder).
 
-   You should see the [frontend](./lms-frontend.md#about-the-lms-frontend).
+   You should see the [frontend](./lms-client-web-react.md#about-the-lms-frontend).
 
 2. Enter the [LMS API key](./lms-api.md#lms-api-key) that you set in [`LMS_API_KEY`](./dotenv-docker-secret.md#lms_api_key) in [`.env.docker.secret`](./dotenv-docker-secret.md#envdockersecret).
 

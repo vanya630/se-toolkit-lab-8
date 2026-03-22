@@ -45,7 +45,7 @@ area of change:
 - `readme` — Root `README.md`
 - `caddy` — `caddy/` config and reverse-proxy setup
 - `lab` — `lab/` (task sheets, setup guide)
-- `frontend` — `frontend/`
+- `client-web-react` — `client-web-react/`
 - `backend` — `backend/`, `pyproject.toml`, backend config
 - `bot` — `bot/`, bot config
 - `tests` — `backend/tests/` (test files and fixtures)
