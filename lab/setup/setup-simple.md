@@ -71,6 +71,8 @@ We refer to your fork as `fork` and to the original repo as `upstream`.
    uv sync --dev
    ```
 
+   You will add `nanobot-ai` later in Task 1 inside a repo-local `nanobot/` project.
+
 4. Create the environment file:
 
    ```terminal

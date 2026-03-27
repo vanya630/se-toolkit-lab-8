@@ -186,7 +186,7 @@ Main branch = working LMS with no agent. Students create `nanobot/` from scratch
 
 #### Why students create `nanobot/` from scratch
 
-Real-world setup: `uv init && uv add nanobot-ai`, write config, Dockerize. Not clone a pre-configured submodule. Students understand every file because they created it.
+Real-world setup: `uv init && uv add "nanobot-ai @ git+https://github.com/HKUDS/nanobot.git@e7d371ec1e6531b28898ec2c869ef338e8dd46ec"`, write config, Dockerize. Not clone a pre-configured submodule. Students understand every file because they created it.
 
 #### Why `mcp/mcp_lms/` is provided
 
