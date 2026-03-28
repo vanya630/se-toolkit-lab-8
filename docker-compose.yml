@@ -101,6 +101,7 @@ services:
   #     args:
   #       REGISTRY_PREFIX_DOCKER_HUB: ${REGISTRY_PREFIX_DOCKER_HUB:-}
   #   restart: unless-stopped
+  #   user: "${HOST_UID:-1000}:${HOST_GID:-1000}"
   #   networks:
   #     - lms-network
   #   volumes:
